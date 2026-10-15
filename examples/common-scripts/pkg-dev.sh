@@ -35,6 +35,7 @@ fi
 
 # Bundle uninstall script into the extension
 cp "${script_dir}/uninstall.sh" .
+chmod +x uninstall.sh
 
 # Run the appropriate packaging script
 ${script_dir}/make-extension-${vol_type} "${ext_name}"
